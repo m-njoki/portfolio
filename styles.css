@@ -1,1 +1,301 @@
- 
+ body{
+    margin: 0;
+    background-color: #0b1120;
+    color: #ffffff;
+ }
+
+ header p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+ }
+
+ #name{
+    font-size: 50px;
+    font-weight: bolder;
+    color: rgb(245, 84, 245);
+}
+
+#title{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+h1{
+    color: rgb(245, 84, 245);
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/*Nav section*/
+nav{
+    padding: 10px 30px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 30px;
+}
+nav ul li{
+    padding: 10px;
+    border-radius: 5px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(245, 84, 245);
+}
+nav ul li a:hover{
+    background-color: rgb(60, 10, 100);
+    border: #ffffff solid 2px;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+}
+
+/*Main section*/
+main{
+    margin: 10px 30px;
+    display: block;
+}
+
+/*About secion*/
+.about-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 50px 0;
+
+}
+
+#about{
+    margin: 20px;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: #290C50;
+}
+
+#about ul, p{
+    margin: 10px;
+    font-size: 20px;
+    color: white;
+}
+
+#about ul li{
+    padding: 10px;
+}
+
+#about p{
+    text-align: left;
+}
+
+.profile-pic{
+    width: 350px;
+    height: 350px;
+    border-radius: 15px;
+}
+
+/*Skills section*/
+#skills {
+    margin: 80px;
+    border-top: #ffffff solid 2px;
+    border-bottom: #ffffff solid 2px;
+    border-left: none;
+    border-right: none;
+    border-radius: 10px;
+    padding: 20px 0px 60px 0px;
+}
+
+#skills h1 {
+    text-align: left;
+    margin-left: 90px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    justify-items: center;
+    width: 100%;
+}
+
+.skill-card {
+    background-color: rgb(90, 5, 90);
+    border: 2px solid #924eeb;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 5px 5px 15px rgba(150, 100, 200, 0.3);
+    text-align: center;
+    width: 100%;
+    max-width: 200px;
+}
+
+.skill-card h3 {
+    font-size: 20px;
+    color: rgb(245, 84, 245);
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    font-size: 18px;
+    color: white;
+}
+
+/*Projects section*/
+#projects {
+    text-align: center;
+    padding: 50px 20px;
+    color: #ffffff;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.project-card {
+    background: #12122d;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 10px 10px rgba(255, 255, 255, 0.1);
+    transition: transform 0.5s ease-in-out;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.project-card a {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #cfcfcf;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.project-card p {
+    font-size: 16px;
+    color: white;
+    margin-top: 5px;
+}
+
+/*Contact section*/
+#contact {
+    margin: 80px 40px;
+    padding: 30px;
+    background-color: #290C50;
+    border-radius: 15px;
+    text-align: center;
+}
+
+#contact h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(245, 84, 245);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+    max-width: 300px;
+}
+
+.info-box {
+    background-color: #1e0a3b;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(245, 84, 245, 0.5);
+}
+
+.info-box i {
+    font-size: 24px;
+    color: rgb(245, 84, 245);
+    margin-bottom: 10px;
+}
+
+/* Form Styling */
+.contact-form {
+    flex: 1;
+    max-width: 500px;
+    background-color: #1e0a3b;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(245, 84, 245, 0.5);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+input, textarea {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid #924eeb;
+    background-color: #290C50;
+    color: white;
+    width: 100%;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button {
+    background-color: rgb(245, 84, 245);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: rgb(60, 10, 100);
+}
+
+/* Responsive: Stack on small screens */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info,
+    .contact-form {
+        max-width: 100%;
+    }
+}

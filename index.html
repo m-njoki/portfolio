@@ -1,26 +1,151 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio/title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
- </head>
- <body>
-    <nav>
-        <ul>
-            <li>About Me</li>
-            <li>Skills</li>
-            <li>Projects</li>
-            <li>Contact</li>
-        </ul>
-    </nav>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
 
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-        <p>Explore my projects and skills.</p>
-    </header>
+        <header>
+            <p>Hello, I'm</p>
+            <p id="name">Mercy Njoki</p>
+            <p id="title">A software developer</p>
+        </header>
+        
+        <main class="content">
 
+            <div class="about-section">
+                <section id="about">
+                    <h1>About Me</h1>
+                <ul>
+                    <li>A Computer Science student.</li>
+                    <li>A Software Engineering learner at PLP.</li>
+                </ul>
+                <p> - As a creative thinker and problem solver, I am eager to learn and grow <br> as a developer to create solutions that are innovative with meaningful real-world impact.</p>
+            </section>
+            
+            <img src="abt.jpg" alt="A professional photo of Mercy Njoki" class="profile-pic">
+            </div>
+            
 
- </body>
- </html>
+            <section id="skills">
+                <h1>Skills</h1>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <h3>Programming Languages</h3>
+                            <p>HTML, CSS <br> JavaScript, Python</p>
+                        </div>
+                        <div class="skill-card">
+                            <h3>Database Management</h3>
+                            <p>MySQL</p>
+                        </div>
+                        <div class="skill-card">
+                            <h3>Version Control</h3>
+                            <p>GitHub</p>
+                        </div>
+                        <div class="skill-card">
+                            <h3>UI/UX</h3>
+                            <p>Figma</p>
+                        </div>
+                    </div>
+                </section>
+                
+            </section>
+            
+            <!-- Projects Section -->
+            <section id="projects">
+                <h1>Projects</h1>
+                <div class="projects-container">
+                    <div class="project-card">
+                        <img src="image/1.png" alt="Hometown project">
+                        <a href="https://famous-sorbet-0b40cb.netlify.app/">Hometown Project</a>
+                        <p>Kenya's tourist attraction sites</p>
+                    </div>
+                    <div class="project-card">
+                        <img src="image/2.png" alt="Basketball scoreboard">
+                        <a href="https://illustrious-valkyrie-9d301b.netlify.app/">Basketball Scoreboard</a>
+                        <p>A basketball scoreboard that tracks teams' records.</p>
+                    </div>
+                    <div class="project-card">
+                        <img src="image/3.png" alt="A game counter">
+                        <a href="https://extraordinary-scone-99a109.netlify.app/">Scrabble Counter</a>
+                        <p>A counter for Scrabble marks.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Contact Me Section -->
+<section id="contact">
+    <h1>Contact Me</h1>
+
+    <div class="contact-container">
+
+        <!-- Left Side-->
+        <div class="contact-info">
+            <div class="info-box">
+                <i class="fas fa-map-marker-alt"></i>
+                <p><strong>Location</strong><br>
+                    Nyeri, Kenya</p>
+            </div>
+            <div class="info-box">
+                <i class="fas fa-envelope"></i>
+                <p><strong>Email</strong><br>
+                    <a href="mailto:gateremg@gmail.com">mnjokimercy@gmail.com</a>
+                </p>
+            </div>
+            <div class="info-box">
+                <i class="fas fa-phone"></i>
+                <p><strong>Phone</strong><br>
+                    (+254) 748078083</p>
+            </div>
+        </div>
+
+        <!--Middle section-->
+        <div class="contact-info">
+            <div class="info-box">
+                <a href="https://github.com/m-njoki"><i class="fa-brands fa-github"></i></a>
+                <p><strong>GitHub</strong><br>
+                    
+                </p>
+            </div>
+            <div class="info-box">
+                <a href="mailto:gateremg@gmail.com"><i class="fa-brands fa-linkedin"></i></a>
+                <p><strong>LinkedIn</strong><br>
+                    
+                </p>
+            </div>
+        </div>
+
+        <!-- Right Side-->
+        <div class="contact-form">
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+        </main>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Mercy Njoki. All rights reserved.</p>
+    </footer>
+</body>
+</html>
