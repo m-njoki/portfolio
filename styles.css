@@ -26,6 +26,10 @@ h1{
     font-size: 40px;
     font-weight: bold;
 }
+h3{
+    font-size: 20px;
+    color: rgb(245, 84, 245);
+}
 
 /*Nav section*/
 nav{
@@ -48,9 +52,10 @@ nav ul li a{
     font-weight: bold;
     color: rgb(245, 84, 245);
 }
+
 nav ul li a:hover{
     background-color: rgb(60, 10, 100);
-    border: #ffffff solid 2px;
+    border: #924eeb solid 2px;
     border-radius: 5px;
     padding: 5px;
     color: white;
@@ -124,7 +129,7 @@ main{
 }
 
 .skill-card {
-    background-color: rgb(90, 5, 90);
+    background-color: #290C50;
     border: 2px solid #924eeb;
     border-radius: 10px;
     padding: 10px;
@@ -190,8 +195,96 @@ main{
 
 .project-card p {
     font-size: 16px;
-    color: white;
+    color: #c0c0c0;
     margin-top: 5px;
+}
+
+/*Experience section*/
+#education {
+    padding: 50px 10%;
+    text-align: center;
+    color: #ffffff;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 15px 0;
+    position: relative;
+}
+
+.timeline-icon img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid rgb(245, 84, 245);
+    padding: 5px;
+}
+
+.timeline-card {
+    background: rgba(30, 10, 50, 0.9); 
+    padding: 15px;
+    margin-left: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(245, 84, 245, 0.6);
+    color: #e0e0e0; 
+    flex-grow: 1;
+    transition: transform 0.3s ease-in-out;
+}
+
+.timeline-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(245, 84, 245, 0.8);
+}
+
+.timeline-card h3 {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: rgb(245, 84, 245);
+}
+
+.timeline-card p {
+    font-size: 1em;
+    color: #c0c0c0;
+}
+
+/*Interests section*/
+#interests {
+    padding: 50px 10%;
+    text-align: center;
+    color: #c0c0c0;
+}
+
+.interests-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.interest-item {
+    background: rgba(30, 10, 50, 0.9); 
+    padding: 15px;
+    margin: 10px 0;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(150, 100, 200, 0.3);
+}
+
+.interest-item p{
+    color: #c0c0c0;
+}
+
+.interest-item:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 25px rgba(245, 84, 245, 0.8);
 }
 
 /*Contact section*/
@@ -213,7 +306,7 @@ main{
 
 .contact-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     gap: 20px;
@@ -259,7 +352,7 @@ form {
 }
 
 input, textarea {
-    padding: 10px;
+    padding: 5px;
     font-size: 16px;
     border-radius: 5px;
     border: 2px solid #924eeb;
@@ -298,4 +391,16 @@ button:hover {
     .contact-form {
         max-width: 100%;
     }
+}
+
+/* Footer section */
+footer {
+    background-color: #0b1120;
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
